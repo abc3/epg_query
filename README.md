@@ -19,6 +19,11 @@ end
 
 ## Usage
 
+```bash
+mix deps.get
+make dev
+```
+
 ```elixir
 iex(1)> EpgQuery.parse("select * from some_table")
 {:ok,

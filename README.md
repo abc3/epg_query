@@ -80,16 +80,16 @@ parallel: 1
 inputs: none specified
 Estimated total run time: 14 s
 
-Benchmarking nif response ...
-Benchmarking nif response + json decode ...
+Benchmarking EpgQuery.Port.parse/1 ...
+Benchmarking EpgQuery.parse/1 ...
 
-Name                                 ips        average  deviation         median         99th %
-nif response                    188.12 K        5.32 μs   ±174.45%        5.21 μs        5.63 μs
-nif response + json decode      106.69 K        9.37 μs   ±103.31%        8.96 μs       16.13 μs
+Name                            ips        average  deviation         median         99th %
+EpgQuery.Port.parse/1      188.41 K        5.31 μs   ±177.95%        5.21 μs        5.63 μs
+EpgQuery.parse/1           108.99 K        9.18 μs   ±151.19%        8.88 μs       13.79 μs
 
 Comparison: 
-nif response                    188.12 K
-nif response + json decode      106.69 K - 1.76x slower +4.06 μs
+EpgQuery.Port.parse/1      188.41 K
+EpgQuery.parse/1           108.99 K - 1.73x slower +3.87 μs
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)

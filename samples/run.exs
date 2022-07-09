@@ -2,7 +2,7 @@ query = "select * from Erlang"
 
 Benchee.run(
   %{
-    "nif response" => fn -> Elixir.EpgQuery.Port.parse(query) end,
-    "nif response + json decode" => fn -> EpgQuery.parse(query) end
+    "EpgQuery.Port.parse/1" => fn -> Elixir.EpgQuery.Port.parse(query) end,
+    "EpgQuery.parse/1" => fn -> EpgQuery.parse(query) end
   }
 )
